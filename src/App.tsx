@@ -39,7 +39,8 @@ function App() {
       </Oscar>
       <Greet 
         name = 'Matt'
-        isLoggedIn = {false}
+        // messageCount={10}
+        isLoggedIn = {true}
         />
     </div>
   );
