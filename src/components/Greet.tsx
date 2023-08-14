@@ -8,17 +8,18 @@
 
 type GreetProps = {
     name: string
-    massageCount: number
+    messageCount?: number
     isLoggedIn: boolean
 }
 
 export default function Greet(props: GreetProps) {
+    const { messageCount = 0 } = props
     return (
         <div> 
             <h2>
                 {
                     props.isLoggedIn ? 
-                    `Welcome ${props.name}! You have ${props.massageCount} unread messages` : 
+                    `Welcome ${props.name}! You have ${props.messageCount} unread messages` : 
                     'Welcome Guest'
                 }
             </h2>
